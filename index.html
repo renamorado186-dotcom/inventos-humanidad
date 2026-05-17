@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventos de la Humanidad - Timeline Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">🚀 Inventos de la Humanidad</h1>
+                <p class="subtitle">Descubre los inventos más importantes desde el inicio de los tiempos hasta hoy</p>
+            </div>
+        </header>
+
+        <!-- Search y Filter -->
+        <div class="controls">
+            <input type="text" id="searchInput" class="search-box" placeholder="🔍 Busca un invento...">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="herramientas">Herramientas</button>
+                <button class="filter-btn" data-filter="tecnologia">Tecnología</button>
+                <button class="filter-btn" data-filter="medicina">Medicina</button>
+                <button class="filter-btn" data-filter="energia">Energía</button>
+                <button class="filter-btn" data-filter="transporte">Transporte</button>
+                <button class="filter-btn" data-filter="comunicacion">Comunicación</button>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <div class="timeline-container">
+                <!-- Inventos serán insertados aquí por JavaScript -->
+            </div>
+        </div>
+
+        <!-- Modal para detalles -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Invento" class="modal-image">
+                    <div class="modal-info">
+                        <h2 id="modalTitle"></h2>
+                        <p class="modal-year" id="modalYear"></p>
+                        <p class="modal-inventor" id="modalInventor"></p>
+                        <p class="modal-category" id="modalCategory"></p>
+                        <p class="modal-description" id="modalDescription"></p>
+                        <div class="modal-impact">
+                            <h3>Impacto: <span id="modalImpact"></span>/10</h3>
+                            <div class="impact-bar">
+                                <div class="impact-fill" id="impactFill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 - Inventos de la Humanidad | Creado con 💜</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
